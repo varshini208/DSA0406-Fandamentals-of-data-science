@@ -5,7 +5,6 @@ location = []
 bedrooms = []
 area = []
 price = []
-
 for i in range(n):
     print("\nEnter property", i + 1, "details:")
     property_id.append(int(input("Property ID: ")))
@@ -13,7 +12,6 @@ for i in range(n):
     bedrooms.append(int(input("Number of bedrooms: ")))
     area.append(float(input("Area in square feet: ")))
     price.append(float(input("Listing price: ")))
-
 property_data = pd.DataFrame({
     "Property_ID": property_id,
     "Location": location,
